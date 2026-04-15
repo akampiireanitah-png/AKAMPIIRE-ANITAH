@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Profile Table</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #e9ecef; /* Light gray background for the whole page */
+            padding: 40px;
+        }
+
+        table {
+            width: 700px;
+            border-collapse: collapse;
+            margin: 0 auto;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Adds a nice shadow */
+            background-color: white;
+        }
+        
+        td {
+            border: 2px solid #333;
+            padding: 20px;
+            vertical-align: top;
+        }
+
+        /* ROW 1: Bio Section (Light Blue) */
+        tr:nth-child(1) td {
+            background-color: #d1ecf1;
+            color: #0c5460;
+        }
+
+        /* ROW 2: Lists Section (White/Neutral) */
+        tr:nth-child(2) td {
+            background-color: #ffffff;
+        }
+
+        /* ROW 3: Table Section (Very Light Gray) */
+        tr:nth-child(3) td {
+            background-color: #f8f9fa;
+        }
+
+        /* ROW 4: Footer Section (Darker Slate) */
+        tr:nth-child(4) td {
+            background-color: #343a40;
+            color: white;
+        }
+
+        .profile-pic {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            border: 3px solid #0c5460;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 20px;
+            background-color: white;
+        }
+
+        .bio-text {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .contact-icons {
+            text-align: center;
+        }
+
+        .contact-icons a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #ffc107; /* Gold color for links against dark background */
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        /* Styling for the nested table */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+        }
+        .data-table th {
+            background-color: #6c757d;
+            color: white;
+            padding: 10px;
+        }
+        .data-table td {
+            border: 1px solid #dee2e6;
+            padding: 8px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <td colspan="2">
+                <img src="2400817423.jpeg" alt="Profile" class="profile-pic">
+                <div class="bio-text">
+                    <h2>Name & Bio</h2>
+                    <p>Student at <strong>Kyambogo University</strong>.<br>BITC Department | Class of 2027</p>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td width="50%">
+                <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                <ol>
+                    <li>Kyambogo University, BITC, 2024-2027</li>
+                    <li>Maryhill High School, UACE, 2022-2023</li>
+                <li>Maryhill High School, UCE, 2018-2021</li>
+                    
+
+                </ol>
+            </td>
+            <td width="50%">
+                <h3><i class="fas fa-tools"></i> Skills</h3>
+                <ul>
+                    <li>Web Design</li>
+                    <li>Database Management</li>
+                    <li>Coding</li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <h3 style="margin-top:0;">Course Work Table</h3>
+                <table class="data-table">
+                    <tr>
+                        <th>Subject</th>
+                        <th>Grade</th>
+                    </tr>
+                    <tr>
+                        <td>Programming</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>Systems Analysis</td>
+                        <td>B+</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2" class="contact-icons">
+                <a href="#"><i class="fab fa-whatsapp"></i> 0765617690</a>
+                <a href="#"><i class="fab fa-facebook"></i> @akampiireanitah</a>
+                <a href="#"><i class="fab fa-instagram"></i> anitah06</a>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
